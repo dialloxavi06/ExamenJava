@@ -32,7 +32,7 @@ public class PizzaDAO {
         try {
             Class.forName("com.mysql.cj.jdbc.Driver");
             Connection con = DriverManager.getConnection("jdbc:mysql://localhost:8889/BDD_INGREDIENT", "root", "root");
-            PreparedStatement statement = con.prepareStatement("DELETE * FROM ingredient;");
+            PreparedStatement statement = con.prepareStatement("DELETE FROM ingredient;");
             statement.executeUpdate();
             con.close();
         } catch (Exception e) {

@@ -82,7 +82,7 @@ public class HelloController {
         recetteForm.clear();
         prixForm.clear();
         ingredientForm.clear();
-
+        getPizzas();
     }
 
     @FXML
